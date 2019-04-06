@@ -763,7 +763,7 @@ module.exports = function( THREE ) {
 
 			switch ( event.touches.length ) {
 
-				case 1:	// one-fingered touch: rotate
+				case 2:	// one-fingered touch: rotate
 
 					if ( scope.enableRotate === false ) return;
 
@@ -773,7 +773,7 @@ module.exports = function( THREE ) {
 
 					break;
 
-				case 2:	// two-fingered touch: dolly
+				case 1:	// two-fingered touch: dolly
 
 					if ( scope.enableZoom === false ) return;
 
@@ -816,7 +816,7 @@ module.exports = function( THREE ) {
 
 			switch ( event.touches.length ) {
 
-				case 1: // one-fingered touch: rotate
+				case 2: // one-fingered touch: rotate
 
 					if ( scope.enableRotate === false ) return;
 					if ( state !== STATE.TOUCH_ROTATE ) return; // is this needed?...
@@ -825,7 +825,7 @@ module.exports = function( THREE ) {
 
 					break;
 
-				case 2: // two-fingered touch: dolly
+				case 1: // two-fingered touch: dolly
 
 					if ( scope.enableZoom === false ) return;
 					if ( state !== STATE.TOUCH_DOLLY ) return; // is this needed?...
